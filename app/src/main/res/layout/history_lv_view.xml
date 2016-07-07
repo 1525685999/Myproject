@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center"
+    android:background="#fff"
+    >
+    
+<LinearLayout 
+    android:id="@+id/history_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" 
+    android:layout_marginLeft="@dimen/j15dp"
+    android:layout_marginRight="@dimen/j15dp"
+    >
+  <TextView
+    android:id="@+id/style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="转账"
+    android:drawableLeft="@drawable/money_img" 
+    android:gravity="center_vertical" 
+      />
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+      /> 
+   <TextView
+     android:id="@+id/money"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="100"
+       />
+   <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+      /> 
+   <TextView
+    android:id="@+id/trueorfalse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="成功"
+    android:drawableLeft="@drawable/true_img"  
+    android:gravity="center_vertical"
+    android:layout_gravity="center_horizontal"
+       />    
+</LinearLayout>
+<TextView
+    android:id="@+id/mtime"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content" 
+   android:text="2016-04-26   10:08"
+   android:layout_below="@id/history_linear"
+   android:textColor="#989898"
+   android:layout_marginTop="@dimen/j5dp"
+  android:layout_marginLeft="@dimen/j15dp"
+    android:layout_marginRight="@dimen/j15dp"
+    />
+</RelativeLayout>

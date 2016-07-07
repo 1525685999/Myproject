@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background_view"
+    >
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/j45dp"
+        android:background="@drawable/background_login"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="说明"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/userName"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/j10dp"
+                android:src="@drawable/p_login_back" />
+
+            <TextView
+                android:id="@+id/esc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/j5dp"
+                android:background="#00000000"
+                android:text="退出"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginTop="@dimen/j26_2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="声纹密码"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:textColor="#34AE2E"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text=" 
+这是一项新型安全验证手段，用户只需要在每次登陆时说“我的声音就是我的密码”,无需记忆任何密码或其他个人敏感信息。要建立属于您的声纹,您需要按照以下步骤重复一句话 3 次。您的信息将会保密，并且得到隐私政策的保护。"
+           android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/j10dp"
+            android:layout_marginRight="@dimen/j10dp"
+
+            />
+    </LinearLayout>
+<TextView
+    android:id="@+id/next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"  
+    android:text="继续"
+    android:textSize="25sp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="@dimen/j72_5dp"
+    android:textColor="#11E4DD"
+    />
+</RelativeLayout>
